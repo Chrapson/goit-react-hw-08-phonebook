@@ -1,0 +1,19 @@
+.contact__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+.contact__listItem {
+  display: flex;
+  gap: 1rem;
+  padding: 0.25rem;
+  justify-content: space-between;
+  font-weight: 500;
+  text-transform: capitalize;
+  /* border: 1px solid black; */
+  align-items: center;
+  background-color: rgba(251, 243, 0, 0.329);
+  border-radius: 2%;
+}
