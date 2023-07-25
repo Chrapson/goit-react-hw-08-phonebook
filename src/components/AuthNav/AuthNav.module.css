@@ -6,6 +6,6 @@
   color: darkgray;
 
   &:global.active {
-    color: blueviolet;
+    color: blue;
   }
 }
