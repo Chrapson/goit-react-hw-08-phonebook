@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import { ContactList } from 'components/ContactList/ContactList';
 import { fetchContacts } from 'redux/contacts/operations';
 import { selectError, selectIsLoading } from 'redux/contacts/selectors';
@@ -19,9 +19,9 @@ export const Contacts = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Your Contacts</title>
-      </Helmet>
+      </Helmet> */}
       <div className="wrapper">
         <div>{isLoading && 'Request in progress...'}</div>
         <h1>Phonebook</h1>

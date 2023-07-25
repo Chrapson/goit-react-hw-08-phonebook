@@ -1,12 +1,12 @@
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 
 export const Register = () => {
   return (
     <div>
-      <Helmet>
+      {/* <Helmet>
         <title>Register</title>
-      </Helmet>
+      </Helmet> */}
       <RegisterForm />
     </div>
   );
