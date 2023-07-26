@@ -9,7 +9,7 @@ export const Navigation = () => {
   return (
     <nav>
       <NavLink className={styles.link} to="/">
-        <img src={logo} width="70" height="70" />
+        <img src={logo} width="70" height="70" alt="logo" />
       </NavLink>
       {isLoggedIn && (
         <NavLink className={styles.link} to="/contacts">
