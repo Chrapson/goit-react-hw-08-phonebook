@@ -5,7 +5,7 @@
   font-weight: 700;
   color: darkgray;
 
-  &:global.active {
+  &:active {
     color: blue;
   }
 }

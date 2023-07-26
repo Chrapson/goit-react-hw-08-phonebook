@@ -1,11 +1,27 @@
+.wrapper {
+  display: flex;
+  gap: 1rem;
+}
 .link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   text-decoration: none;
-  padding: 12px;
   font-weight: 700;
   color: darkgray;
+  font-size: 1.25rem;
 
   &:global.active {
     color: blue;
   }
 }
+.icon {
+  fill: darkgray;
+}
+.icon-active {
+  fill: blue;
+}
+/* .icon:active {
+  fill: red;
+} */
