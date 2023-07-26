@@ -1,3 +1,5 @@
+@import '../../vars.css';
+
 .wrapper {
   display: flex;
   gap: 1rem;
@@ -9,19 +11,16 @@
   gap: 0.5rem;
   text-decoration: none;
   font-weight: 700;
-  color: darkgray;
+  color: var(--link-color);
   font-size: 1.25rem;
 
   &:global.active {
-    color: blue;
+    color: var(--active);
   }
 }
 .icon {
-  fill: darkgray;
+  fill: var(--link-color);
 }
 .icon-active {
-  fill: blue;
+  fill: var(--active);
 }
-/* .icon:active {
-  fill: red;
-} */
