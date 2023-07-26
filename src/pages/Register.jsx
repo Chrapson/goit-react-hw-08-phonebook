@@ -1,12 +1,11 @@
-// import { Helmet } from 'react-helmet';
 import { RegisterForm } from 'components/RegisterForm/RegisterForm';
-
+import { Helmet } from 'react-helmet-async';
 export const Register = () => {
   return (
     <div>
-      {/* <Helmet>
+      <Helmet>
         <title>Register</title>
-      </Helmet> */}
+      </Helmet>
       <RegisterForm />
     </div>
   );

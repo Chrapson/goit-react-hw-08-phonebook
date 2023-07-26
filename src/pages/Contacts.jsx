@@ -7,6 +7,7 @@ import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
 import { LoadingSpinner } from 'components/LoadingSpinner/LoadingSpinner';
+import { Helmet } from 'react-helmet-async';
 
 export const Contacts = () => {
   const dispatch = useDispatch();
@@ -19,9 +20,9 @@ export const Contacts = () => {
 
   return (
     <>
-      {/* <Helmet>
+      <Helmet>
         <title>Your Contacts</title>
-      </Helmet> */}
+      </Helmet>
       <div className="wrapper">
         <div>{isLoading && 'Request in progress...'}</div>
         <h1>Phonebook</h1>
