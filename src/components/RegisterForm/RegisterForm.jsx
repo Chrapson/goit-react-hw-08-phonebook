@@ -24,21 +24,45 @@ export const RegisterForm = () => {
       <Link to="/">
         <img src={logo} width="50" height="50" alt="logo" />
       </Link>
-      <form className="" onSubmit={handleSubmit} autoComplete="off">
-        <label className="">
+      <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
+        Log in to Phonebook
+        <label className={styles.label}>
           Username
-          <input type="text" name="name" />
+          <input
+            className={styles.input}
+            // placeholder="Username"
+            type="text"
+            name="username"
+          />
         </label>
-        <label className="">
+        <label className={styles.label}>
           Email
-          <input type="email" name="email" />
+          <input
+            className={styles.input}
+            // placeholder="Email"
+            type="email"
+            name="email"
+          />
         </label>
-        <label className="">
+        <label className={styles.label}>
           Password
-          <input type="password" name="password" />
+          <input
+            className={styles.input}
+            // placeholder="Password"
+            type="password"
+            name="password"
+          />
         </label>
-        <button type="submit">Register</button>
-      </form>
+        <button className={styles.button} type="submit">
+          Register
+        </button>
+      </form>{' '}
+      <div>
+        Have an account?{' '}
+        <Link className={styles.link} to="/login">
+          Log in
+        </Link>
+      </div>
     </div>
   );
 };
