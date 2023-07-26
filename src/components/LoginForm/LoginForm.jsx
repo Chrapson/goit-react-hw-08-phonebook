@@ -24,7 +24,7 @@ export const LoginForm = () => {
       </label>
       <label className="">
         Password
-        <input type="passwor" name="password" />
+        <input type="password" name="password" />
       </label>
       <button type="submit">Log In</button>
     </form>
