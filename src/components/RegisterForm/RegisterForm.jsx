@@ -12,7 +12,7 @@ export const RegisterForm = () => {
     const form = e.currentTarget;
     dispatch(
       register({
-        name: form.elements.name.value,
+        name: form.elements.login.value,
         email: form.elements.email.value,
         password: form.elements.password.value,
       })
@@ -32,7 +32,7 @@ export const RegisterForm = () => {
             className={styles.input}
             // placeholder="Username"
             type="text"
-            name="username"
+            name="login"
           />
         </label>
         <label className={styles.label}>

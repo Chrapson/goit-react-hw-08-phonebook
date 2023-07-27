@@ -12,16 +12,12 @@ import { PrivateRoute } from './PrivateRoute/PrivateRoute';
 import { refreshUser } from 'redux/auth/operations';
 import { Contacts } from 'pages/Contacts';
 import { HelmetProvider } from 'react-helmet-async';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const App = () => {
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
-  // const isLoading = useSelector(selectIsLoading);
-  // const error = useSelector(selectError);
-
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch]);
 
   useEffect(() => {
     dispatch(refreshUser());
@@ -30,33 +26,37 @@ export const App = () => {
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
-    <HelmetProvider>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route
-            path="/register"
-            element={
-              <RestrictedRoute
-                redirectTo="/contacts"
-                component={<Register />}
-              />
-            }
-          />
-          <Route
-            path="/login"
-            element={
-              <RestrictedRoute redirectTo="/contacts" component={<Login />} />
-            }
-          />
-          <Route
-            path="/contacts"
-            element={
-              <PrivateRoute redirectTo="/login" component={<Contacts />} />
-            }
-          />
-        </Route>
-      </Routes>
-    </HelmetProvider>
+    <>
+      <HelmetProvider>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route
+              path="/register"
+              element={
+                <RestrictedRoute
+                  redirectTo="/contacts"
+                  component={<Register />}
+                />
+              }
+            />
+            <Route
+              path="/login"
+              element={
+                <RestrictedRoute redirectTo="/contacts" component={<Login />} />
+              }
+            />
+            <Route
+              path="/contacts"
+              element={
+                <PrivateRoute redirectTo="/login" component={<Contacts />} />
+              }
+            />
+          </Route>
+        </Routes>
+        <footer>Copyright by Marcin Chraplewski @ GOIT</footer>
+      </HelmetProvider>
+      <ToastContainer />
+    </>
   );
 };

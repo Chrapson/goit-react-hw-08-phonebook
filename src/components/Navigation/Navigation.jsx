@@ -24,7 +24,7 @@ export const Navigation = () => {
               height="25"
             >
               <use href={`${contacts}#contacts`} />
-            </svg>{' '}
+            </svg>
             Contacts
           </NavLink>
         )}
