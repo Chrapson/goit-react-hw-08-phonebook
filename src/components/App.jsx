@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { HomePage } from 'pages/Home';
+import { HomePage } from 'pages/Home/Home';
 import { Register } from 'pages/Register';
 import { Login } from 'pages/Login';
 import { Layout } from './Layout/Layout';
@@ -54,7 +54,9 @@ export const App = () => {
             />
           </Route>
         </Routes>
-        <footer>Copyright by Marcin Chraplewski @ GOIT</footer>
+        <footer className="footer">
+          Copyright by Marcin Chraplewski @ GOIT
+        </footer>
       </HelmetProvider>
       <ToastContainer />
     </>
