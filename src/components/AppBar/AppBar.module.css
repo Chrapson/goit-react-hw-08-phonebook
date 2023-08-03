@@ -5,3 +5,11 @@
   background-color: lightblue;
   padding: 0.5rem 2rem;
 }
+
+@media screen and (max-width: 420px) {
+  .header {
+    padding: 0.25rem 1rem;
+    gap: 40px;
+    width: 100vw;
+  }
+}

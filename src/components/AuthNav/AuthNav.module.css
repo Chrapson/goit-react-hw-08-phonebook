@@ -33,3 +33,17 @@
 .icon-active {
   fill: var(--active);
 }
+@media screen and (max-width: 420px) {
+  .wrapper {
+    margin: 0;
+    gap: 0.5rem;
+  }
+  .link {
+    gap: 0.25rem;
+    font-size: 0.75rem;
+  }
+  .icon {
+    width: 25px;
+    height: 20px;
+  }
+}
