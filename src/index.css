@@ -29,10 +29,6 @@ h2 {
   text-align: center;
   color: rgb(50, 50, 50);
 }
-body h1,
-h2 {
-  /* padding-top: 1rem; */
-}
 
 .wrapper {
   border-radius: 10px;
@@ -48,4 +44,10 @@ h2 {
   width: 100%;
   margin: auto 0;
   height: 2.5rem;
+}
+@media screen and (max-width: 420px) {
+  .footer {
+    /* height: 0.75rem; */
+    bottom: -50px;
+  }
 }

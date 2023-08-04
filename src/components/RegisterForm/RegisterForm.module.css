@@ -56,3 +56,13 @@ body {
 .link:hover {
   color: rgb(102, 180, 248);
 }
+@media screen and (max-width: 420px) {
+  .wrapper {
+    margin-top: 2rem;
+    gap: 1.25rem;
+  }
+  .form {
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+}

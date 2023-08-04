@@ -45,7 +45,6 @@ body {
 }
 .button:hover {
   background-color: rgba(184, 183, 183, 0.5);
-  /* color: rgba(255, 255, 255, 0.931); */
   cursor: pointer;
 }
 .link {
@@ -56,4 +55,17 @@ body {
 }
 .link:hover {
   color: rgb(102, 180, 248);
+}
+@media screen and (max-width: 420px) {
+  .wrapper {
+    margin-top: 2rem;
+    gap: 1.25rem;
+  }
+  .form {
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  .info {
+    margin-bottom: 10px;
+  }
 }

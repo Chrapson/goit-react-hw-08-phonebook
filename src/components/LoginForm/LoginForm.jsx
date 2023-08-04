@@ -48,7 +48,7 @@ export const LoginForm = () => {
           Log In
         </button>
       </form>
-      <div>
+      <div className={styles.info}>
         Don't have an account?{' '}
         <Link className={styles.link} to="/register">
           Sign Up
