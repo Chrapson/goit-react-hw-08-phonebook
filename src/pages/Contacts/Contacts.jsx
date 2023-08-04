@@ -8,6 +8,7 @@ import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
 import { LoadingSpinner } from 'components/LoadingSpinner/LoadingSpinner';
 import { Helmet } from 'react-helmet-async';
+import styles from './Contacts.module.css';
 
 export const Contacts = () => {
   const dispatch = useDispatch();
@@ -23,11 +24,11 @@ export const Contacts = () => {
       <Helmet>
         <title>Your Contacts</title>
       </Helmet>
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <div>{isLoading && 'Request in progress...'}</div>
-        <h1>Phonebook</h1>
+        <h1 className={styles.header}>Phonebook</h1>
         <ContactForm />
-        <h2>Contacts</h2>
+        <h2 className={styles.subheader}>Contacts</h2>
         <Filter />
         {isLoading && !error && <LoadingSpinner />}
         <ContactList />

@@ -10,7 +10,7 @@ import { useAuth } from 'hooks/useAuth';
 import { RestrictedRoute } from './RestrictedRoute/RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute/PrivateRoute';
 import { refreshUser } from 'redux/auth/operations';
-import { Contacts } from 'pages/Contacts';
+import { Contacts } from 'pages/Contacts/Contacts';
 import { HelmetProvider } from 'react-helmet-async';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

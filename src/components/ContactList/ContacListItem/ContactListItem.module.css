@@ -13,3 +13,9 @@
   cursor: pointer;
   fill: white;
 }
+@media screen and (max-width: 420px) {
+  .button {
+    padding: 0.25rem;
+    font-size: 0.75rem;
+  }
+}

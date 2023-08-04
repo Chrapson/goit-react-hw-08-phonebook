@@ -32,3 +32,14 @@
   stroke: white;
   fill: white;
 }
+@media screen and (max-width: 420px) {
+  .form {
+    gap: 0.5rem;
+  }
+  .label {
+    font-size: 1rem;
+  }
+  .button {
+    padding: 0.25rem;
+  }
+}

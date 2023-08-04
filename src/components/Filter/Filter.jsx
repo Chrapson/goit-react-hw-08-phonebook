@@ -11,12 +11,12 @@ export const Filter = () => {
   };
 
   return (
-    <div className={styles.filter__wrapper}>
-      <label className={styles.filter__label} htmlFor="search">
+    <div className={styles.wrapper}>
+      <label className={styles.label} htmlFor="search">
         Find contacts by name
       </label>
       <input
-        className={styles.filter__input}
+        className={styles.input}
         onChange={handleChangeFilter}
         type="search"
         name="filter"

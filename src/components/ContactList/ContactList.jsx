@@ -8,12 +8,12 @@ export const ContactList = () => {
   const contacts = useSelector(selectFilteredContacts);
 
   return (
-    <ul className={styles.contact__list}>
+    <ul className={styles.list}>
       {contacts.length === 0 ? (
-        <li className={styles.contact__listItem}>No contacts found</li>
+        <li className={styles.listItem}>No contacts found</li>
       ) : (
         contacts.map(contact => (
-          <li className={styles.contact__listItem} key={contact.id}>
+          <li className={styles.listItem} key={contact.id}>
             <ContactListItem contact={contact} />
           </li>
         ))
